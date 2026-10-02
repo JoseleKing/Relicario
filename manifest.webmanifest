@@ -1,0 +1,21 @@
+{
+  "name": "Relicario",
+  "short_name": "Relicario",
+  "description": "Cada día, tres expresiones con una palabra fósil que solo sobrevive dentro de ellas. ¿Sabes qué significaba?",
+  "lang": "es",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3EAD8",
+  "theme_color": "#F3EAD8",
+  "categories": ["games", "education", "entertainment"],
+  "icons": [
+    { "src": "icons/relicario-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/relicario-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/relicario-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/relicario-logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

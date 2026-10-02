@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Relicario</title>
+  <meta name="description" content="Cada día, tres expresiones con una palabra fósil que solo sobrevive dentro de ellas. ¿Sabes qué significaba?">
+  <meta name="theme-color" content="#F3EAD8">
+  <meta name="color-scheme" content="light">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="icons/relicario-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Relicario">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Estilos de la portada en línea: así se pinta bien antes de que cargue styles.css.
+       Los colores repiten --papel y --tinta de styles.css porque aún no existe. -->
+  <style>
+    #portada {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      place-content: center;
+      justify-items: center;
+      gap: 1rem;
+      background: #F3EAD8;
+      color: #2B2118;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    #portada.oculta { opacity: 0; visibility: hidden; }
+    .portada__logo { width: 8rem; height: 8rem; animation: asomar 0.5s ease-out both; }
+    .portada__nombre {
+      margin: 0;
+      font-family: "IM Fell English SC", "IM Fell English", Georgia, serif;
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      animation: asomar 0.5s ease-out both;
+    }
+    @keyframes asomar { from { opacity: 0; transform: scale(0.9); } }
+    @media (prefers-reduced-motion: reduce) {
+      #portada, #portada * { animation: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="portada" aria-hidden="true">
+    <svg class="portada__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect x="2" y="2" width="116" height="116" rx="26" fill="#F3EAD8"/><circle cx="60" cy="60" r="30" fill="#B3261E"/><circle cx="60" cy="60" r="33.5" fill="none" stroke="#2B2118" stroke-width="1.5"/><g fill="#2B2118"><path d="M60 20 L56 30 L64 30Z"/><path d="M60 100 L56 90 L64 90Z"/><path d="M20 60 L30 56 L30 64Z"/><path d="M100 60 L90 56 L90 64Z"/></g><path d="M45.570503597122304 75.5C47.75611510791367 75.41079136690648 49.89712230215827 75.36618705035971 52.08273381294964 75.36618705035971C54.26834532374101 75.36618705035971 56.45395683453238 75.41079136690648 58.639568345323745 75.5V74.16187050359713L56.49856115107914 74.02805755395684C54.446762589928056 73.89424460431654 54.22374100719425 73.53741007194245 54.22374100719425 70.0136690647482V46.73021582733813C55.740287769784175 46.37338129496403 57.07841726618705 46.19496402877698 58.594964028776985 46.19496402877698C63.233812949640296 46.19496402877698 65.82086330935252 48.33597122302159 65.82086330935252 52.1273381294964C65.82086330935252 56.230935251798556 62.56474820143885 58.81798561151079 57.39064748201439 58.81798561151079H56.097122302158276V59.531654676258995C57.07841726618705 60.60215827338129 57.435251798561154 61.09280575539569 58.14892086330936 62.074100719424465L66.35611510791367 73.09136690647482L68.18489208633093 75.5C69.21079136690648 75.41079136690648 70.19208633093525 75.36618705035971 71.2179856115108 75.36618705035971C72.2884892086331 75.36618705035971 73.3589928057554 75.41079136690648 74.4294964028777 75.5V74.16187050359713C73.0021582733813 74.02805755395684 72.2884892086331 73.76043165467625 71.70863309352518 73.0021582733813L61.583453237410076 59.79928057553957C64.08129496402879 59.174820143884894 65.2410071942446 58.684172661870505 66.71294964028777 57.65827338129496C69.03237410071942 56.00791366906475 70.28129496402877 53.77769784172662 70.28129496402877 51.190647482014384C70.28129496402877 46.90863309352518 67.38201438848921 44.5 61.583453237410076 44.5C58.90719424460432 44.5 56.27553956834532 44.63381294964029 53.59928057553957 44.63381294964029C51.012230215827344 44.63381294964029 48.469784172661875 44.58920863309352 45.882733812949645 44.5V45.83812949640288L47.711510791366905 45.971942446043165C49.763309352517986 46.10575539568345 49.9863309352518 46.50719424460432 49.9863309352518 49.9863309352518V70.0136690647482C49.9863309352518 73.53741007194245 49.763309352517986 73.89424460431654 47.711510791366905 74.02805755395684L45.570503597122304 74.16187050359713Z" fill="#F3EAD8"/></svg>
+    <p class="portada__nombre">Relicario</p>
+  </div>
+  <div class="hoja">
+    <header class="cabecera">
+      <button class="icono-btn" id="btn-ayuda" type="button" aria-label="Cómo se juega">?</button>
+      <div class="cabecera__titulo">
+        <h1><img class="cabecera__logo" src="icons/relicario-logo.svg" width="34" height="34" alt="">Relicario</h1>
+        <p class="cabecera__sub" id="subtitulo">Gabinete de palabras fósiles</p>
+      </div>
+      <span class="cabecera__hueco" aria-hidden="true"></span>
+    </header>
+
+    <main id="app">
+      <p class="cargando">Abriendo el relicario…</p>
+    </main>
+  </div>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-titulo">
+    <div class="modal__cuerpo" id="modal-cuerpo"></div>
+    <button class="btn btn--grande modal__cerrar" id="modal-cerrar" type="button">A jugar</button>
+  </dialog>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="volver-almanaque.js?v=1" defer></script>
+  <script src="datos.js?v=1"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
