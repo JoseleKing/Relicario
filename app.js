@@ -329,9 +329,24 @@
 
   function guardar() { guardarEstado(almacen, estado); }
 
-  // Avisa a Almanaque de que la partida de hoy está hecha (ver volver-almanaque.js).
+  // Avisa a Almanaque de que la partida de hoy está hecha (ver volver-almanaque.js),
+  // con los aciertos y la racha para la hoja de Relicario. Con ?dia=N no se manda el
+  // resultado: es un día de prueba.
   function avisarAlmanaque() {
-    if (window.almanaqueHecho) window.almanaqueHecho();
+    var partida = partidaHoy();
+    function avisar() {
+      if (!window.almanaqueHecho) return;
+      if (forzado) { window.almanaqueHecho(); return; }
+      window.almanaqueHecho({
+        aciertos: aciertos(partida),
+        total: partida.respuestas.length,
+        racha: rachaVigente(estado, hoy)
+      });
+    }
+    // Este script corre antes que volver-almanaque.js (que lleva defer): si aún no existe,
+    // se espera a DOMContentLoaded, que llega después de los scripts con defer.
+    if (window.almanaqueHecho) avisar();
+    else document.addEventListener('DOMContentLoaded', avisar, { once: true });
   }
 
   function subtitulo(texto) { document.getElementById('subtitulo').textContent = texto; }
