@@ -40,6 +40,11 @@
     return Math.floor((b - a) / 86400000) + 1;
   }
 
+  // Contenido del día `dia`: al acabarse los días, el ciclo vuelve a empezar por el primero.
+  function diaDeContenido(dias, dia) {
+    return dias[(dia - 1) % dias.length];
+  }
+
   // Fecha local del día n.º n.
   function fechaDelDia(n, inicioISO) {
     var inicio = leerFechaISO(inicioISO || FECHA_INICIO);
@@ -269,6 +274,7 @@
     leerFechaISO: leerFechaISO,
     fechaISO: fechaISO,
     numeroDia: numeroDia,
+    diaDeContenido: diaDeContenido,
     fechaDelDia: fechaDelDia,
     diaForzado: diaForzado,
     fechaLarga: fechaLarga,
@@ -367,7 +373,7 @@
     window.scrollTo(0, 0);
   }
 
-  function reliquiasHoy() { return dias[hoy - 1].reliquias; }
+  function reliquiasHoy() { return diaDeContenido(dias, hoy).reliquias; }
 
   function partidaHoy() { return partidaDelDia(estado, hoy, reliquiasHoy().length); }
 
@@ -496,7 +502,6 @@
     avisarAlmanaque();
     var n = aciertos(partida);
     var total = partida.respuestas.length;
-    var ultimo = hoy >= dias.length;
     var racha = rachaVigente(estado, hoy);
     subtitulo('Relicario del ' + fechaLarga(fechaHoy()));
 
@@ -516,9 +521,7 @@
       '<div><dt>Racha</dt><dd>' + racha + '</dd><dd class="cifras__unidad">' + (racha === 1 ? 'día seguido' : 'días seguidos') + '</dd></div>' +
       '<div><dt>Mejor racha</dt><dd>' + estado.racha.maxima + '</dd><dd class="cifras__unidad">' + (estado.racha.maxima === 1 ? 'día' : 'días') + '</dd></div>' +
       '</dl>' +
-      (ultimo
-        ? '<p class="cuenta-atras">Se acabaron las reliquias de este prototipo.</p>'
-        : '<p class="cuenta-atras">Siguiente relicario en <time id="cuenta-atras">--:--:--</time></p>') +
+      '<p class="cuenta-atras">Siguiente relicario en <time id="cuenta-atras">--:--:--</time></p>' +
       '<h3 class="repaso__titulo">Las piezas de hoy</h3>' +
       '<ol class="repaso">' + reliquiasHoy().map(function (rel, k) {
         var ok = partida.respuestas[k] === 0;
@@ -536,10 +539,10 @@
     document.getElementById('btn-compartir').addEventListener('click', function () {
       compartir(textoCompartir(fechaHoy(), partida, urlJuego()));
     });
-    if (!ultimo) empezarCuentaAtras();
+    empezarCuentaAtras();
   }
 
-  // ---------- Antes y después del prototipo ----------
+  // ---------- Antes del primer día ----------
 
   function pantallaAntes() {
     subtitulo('Gabinete de palabras fósiles');
@@ -549,23 +552,6 @@
       '<div class="floron" aria-hidden="true">❦</div>' +
       '<p class="lema">El relicario abre el ' + esc(fechaLarga(leerFechaISO(FECHA_INICIO))) + '.</p>' +
       '<p>Cada día, tres expresiones con una palabra que solo sobrevive dentro de ellas. ¿Sabrás qué significaba?</p>' +
-      '</section>'
-    );
-  }
-
-  function pantallaFin() {
-    subtitulo('Gabinete de palabras fósiles');
-    var jugados = Object.keys(estado.historial).length;
-    pintar(
-      '<section class="pantalla pantalla--centro">' +
-      '<h2 class="kicker" data-foco tabindex="-1">Gabinete cerrado</h2>' +
-      '<div class="floron" aria-hidden="true">❦</div>' +
-      '<p class="lema">Se acabaron las reliquias de este prototipo.</p>' +
-      '<p>Ya están expuestas las ' + (dias.length * 3) + ' piezas de <b>Relicario</b>. Pronto habrá más vitrinas.</p>' +
-      (jugados ? '<dl class="cifras">' +
-        '<div><dt>Días jugados</dt><dd>' + jugados + '</dd></div>' +
-        '<div><dt>Mejor racha</dt><dd>' + estado.racha.maxima + '</dd></div>' +
-        '</dl>' : '') +
       '</section>'
     );
   }
@@ -699,7 +685,6 @@
     if (!dias || !dias.length) { pantallaError(); return; }
     hoy = forzado || numeroDia(new Date());
     if (hoy < 1) { pantallaAntes(); return; }
-    if (hoy > dias.length) { pantallaFin(); return; }
     pantallaJugada();   // con la partida terminada, muestra el resultado
     // La primera vez, «Cómo se juega» (cuando ya se ha ido la portada).
     if (tocaTutorial(estado, hoy)) {
