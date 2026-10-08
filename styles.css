@@ -14,6 +14,7 @@
   --rojo-tinte: rgba(179, 38, 30, 0.08);
   --verde: #4A6741;
   --verde-tinte: rgba(74, 103, 65, 0.1);
+  --tarjeta-encima: #fff9ee;
 
   --letra: "EB Garamond", Garamond, "Times New Roman", serif;
   --letra-fell: "IM Fell English", "EB Garamond", Georgia, serif;
@@ -23,6 +24,22 @@
   --margen: 16px;
 
   color-scheme: light;
+}
+
+/* Modo oscuro: solo si se elige en Almanaque (data-theme lo pone index.html). */
+:root[data-theme="dark"] {
+  --papel: #1C1712;
+  --tarjeta: #262019;
+  --tinta: #ECE1C9;
+  --tinta-suave: #C2B196;
+  --tinta-tenue: #9C8B73;
+  --filete: #5B4A35;
+  --rojo: #E0675E;
+  --rojo-tinte: rgba(224, 103, 94, 0.14);
+  --verde: #8FB27A;
+  --verde-tinte: rgba(143, 178, 122, 0.14);
+  --tarjeta-encima: #2E271F;
+  color-scheme: dark;
 }
 
 *,
@@ -289,7 +306,7 @@ body {
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.opcion:hover:not(:disabled) { border-color: var(--tinta); background: #fff9ee; }
+.opcion:hover:not(:disabled) { border-color: var(--tinta); background: var(--tarjeta-encima); }
 .opcion:active:not(:disabled) { transform: translateY(1px); }
 .opcion:disabled { cursor: default; }
 

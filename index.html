@@ -7,6 +7,16 @@
   <meta name="description" content="Cada día, tres expresiones con una palabra fósil que solo sobrevive dentro de ellas. ¿Sabes qué significaba?">
   <meta name="theme-color" content="#F3EAD8">
   <meta name="color-scheme" content="light">
+  <script>
+    // Modo claro u oscuro: el que se elija en Almanaque, común a todos los juegos. Sin elegir, claro.
+    try {
+      if (localStorage.getItem('almanaque:tema') === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+        document.querySelector('meta[name="theme-color"]').content = '#1C1712';
+        document.querySelector('meta[name="color-scheme"]').content = 'dark';
+      }
+    } catch (e) {}
+  </script>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/favicon.ico" sizes="32x32">
   <link rel="icon" href="icons/relicario-logo.svg" type="image/svg+xml">
@@ -18,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <!-- Estilos de la portada en línea: así se pinta bien antes de que cargue styles.css.
        Los colores repiten --papel y --tinta de styles.css porque aún no existe. -->
   <style>
@@ -34,6 +44,7 @@
       color: #2B2118;
       transition: opacity 0.4s ease, visibility 0.4s ease;
     }
+    [data-theme="dark"] #portada { background: #1C1712; color: #ECE1C9; }
     #portada.oculta { opacity: 0; visibility: hidden; }
     .portada__logo { width: 8rem; height: 8rem; animation: asomar 0.5s ease-out both; }
     .portada__nombre {
