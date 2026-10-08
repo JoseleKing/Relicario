@@ -9,8 +9,8 @@ function almacenEnMemoria() {
   return { getItem: (k) => (m.has(k) ? m.get(k) : null), setItem: (k, v) => m.set(k, String(v)) };
 }
 
-test('datos.js: 39 días × 3 reliquias con todos los campos', () => {
-  assert.equal(datos.dias.length, 39);
+test('datos.js: 69 días × 3 reliquias con todos los campos', () => {
+  assert.equal(datos.dias.length, 69);
   for (const dia of datos.dias) {
     assert.equal(dia.reliquias.length, 3);
     for (const r of dia.reliquias) {
@@ -23,10 +23,10 @@ test('datos.js: 39 días × 3 reliquias con todos los campos', () => {
 });
 
 test('ciclo: tras el último día se vuelve al primero', () => {
-  // 10 de noviembre de 2026 = día 39 (el último); el 11 vuelve a empezar.
-  const n = L.numeroDia(new Date(2026, 10, 10, 12));
-  assert.equal(n, 39);
-  assert.equal(L.diaDeContenido(datos.dias, n), datos.dias[38]);
+  // 10 de diciembre de 2026 = día 69 (el último); el 11 vuelve a empezar.
+  const n = L.numeroDia(new Date(2026, 11, 10, 12));
+  assert.equal(n, 69);
+  assert.equal(L.diaDeContenido(datos.dias, n), datos.dias[68]);
   assert.equal(L.diaDeContenido(datos.dias, n + 1), datos.dias[0]);
   const expresiones = datos.dias.flatMap((d) => d.reliquias.map((r) => r.expresion.toLowerCase()));
   assert.equal(new Set(expresiones).size, expresiones.length, 'hay expresiones repetidas');

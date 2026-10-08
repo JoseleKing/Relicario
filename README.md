@@ -22,7 +22,7 @@ compilación) de la familia de [Almanaque](https://joseleking.github.io/Almanaqu
 | `index.html` | Estructura de la página |
 | `styles.css` | Estética de gabinete de curiosidades: plana, crema, tinta y lacre |
 | `app.js` | Lógica: día, barajado determinista, progreso, racha, compartir |
-| `datos.js` | Contenido: 39 días × 3 reliquias |
+| `datos.js` | Contenido: 69 días × 3 reliquias |
 | `sw.js` | Service worker (funciona sin conexión) |
 | `manifest.webmanifest` | Datos para instalar la app |
 | `icons/` | Logo SVG, iconos 192/512, adaptable (*maskable*), `apple-touch-icon` y favicon |
@@ -40,7 +40,7 @@ Y abre <http://localhost:8000>. (También funciona abriendo `index.html` con
 doble clic, pero sin modo sin conexión).
 
 - **Forzar un día:** `http://localhost:8000/?dia=4` juega el día 4. Con
-  `?dia=40` (o más) se ve que el ciclo vuelve a empezar. Sin el parámetro, antes
+  `?dia=70` (o más) se ve que el ciclo vuelve a empezar. Sin el parámetro, antes
   del 3 de octubre se ve «El relicario abre el 3 de octubre».
 - **Empezar de cero:** `http://localhost:8000/reiniciar/` borra la partida, el
   historial y la racha de ese navegador (clave `relicario:v1` del `localStorage`).
@@ -56,7 +56,7 @@ var FECHA_INICIO = '2026-10-03';
 
 Esa fecha (en hora local del jugador) es el día 1; cada medianoche se pasa al
 siguiente. Cuando se acaban los días de `datos.js`, el ciclo vuelve a empezar
-por el primero. Con 39 días, el último es el 10 de noviembre de 2026 y el 11
+por el primero. Con 69 días, el último es el 10 de diciembre de 2026 y el 11
 vuelve el día 1.
 
 ## Añadir días

@@ -869,6 +869,666 @@
           opciones: ['La insistencia o competencia tenaz', 'Una mentira', 'Un premio'],
           reliquia: '«Porfía» es la insistencia obstinada o la competencia. Hacer algo a porfía es hacerlo compitiendo, cada uno más que el otro.'
         }
+      ] },
+
+      // Día 40
+      { reliquias: [
+        {
+          expresion: 'Caer [chuzos] de punta',
+          pregunta: '¿Qué son los «chuzos»?',
+          opciones: ['Palos armados con un pincho', 'Granizos', 'Carámbanos'],
+          reliquia: 'El chuzo es un palo con un pincho de hierro. Caer chuzos de punta es llover o granizar con muchísima fuerza.'
+        },
+        {
+          expresion: 'De [chiripa]',
+          pregunta: '¿De dónde viene «chiripa»?',
+          opciones: ['Del billar: un tanto ganado por casualidad', 'De un pájaro que acierta siempre', 'De una moneda de la suerte'],
+          reliquia: 'En el billar, una chiripa es una jugada que sale bien por pura casualidad. De chiripa es por suerte.'
+        },
+        {
+          expresion: 'Poner en la [picota]',
+          pregunta: '¿Qué era la «picota»?',
+          opciones: ['Una columna donde se exponía a los reos', 'Una cereza', 'La cumbre de un monte'],
+          reliquia: 'La picota era la columna donde se exponía a los condenados a la vergüenza pública. Poner en la picota es exponer a alguien a la crítica.'
+        }
+      ] },
+
+      // Día 41
+      { reliquias: [
+        {
+          expresion: 'Saber más que [Lepe]',
+          pregunta: '¿Quién era «Lepe»?',
+          opciones: ['Un obispo muy sabio del siglo XVII', 'Un pueblo de Huelva', 'Un bufón de la corte'],
+          reliquia: 'Se refiere a Pedro de Lepe, obispo de Calahorra famoso por su sabiduría. No tiene que ver con los chistes de Lepe.'
+        },
+        {
+          expresion: 'Sin decir [oxte] ni [moxte]',
+          pregunta: '¿Qué son «oxte» y «moxte»?',
+          opciones: ['Interjecciones sin significado propio', 'Dos santos', 'Dos monedas'],
+          reliquia: '«Oxte» era una interjección para apartar a alguien, y «moxte» un eco suyo. Sin decir oxte ni moxte es sin decir nada.'
+        },
+        {
+          expresion: 'Ni [pizca]',
+          pregunta: '¿Qué es una «pizca»?',
+          opciones: ['Una porción mínima', 'Un pellizco en la piel', 'Una piedra'],
+          reliquia: 'Una pizca es lo que se coge con dos dedos. Ni pizca es nada en absoluto.'
+        }
+      ] },
+
+      // Día 42
+      { reliquias: [
+        {
+          expresion: 'Morir en [olor] de santidad',
+          pregunta: '¿Qué es aquí el «olor»?',
+          opciones: ['La fama o reputación', 'Un perfume de incienso', 'Un rezo'],
+          reliquia: 'Se creía que los cuerpos de los santos desprendían buen olor, y de ahí pasó a significar fama. Morir en olor de santidad es morir con fama de santo.'
+        },
+        {
+          expresion: 'Ni rey ni [roque]',
+          pregunta: '¿Qué es el «roque»?',
+          opciones: ['La torre del ajedrez', 'Un roquero', 'Un peñasco'],
+          reliquia: 'El roque es el nombre antiguo de la torre del ajedrez. Ni rey ni roque es nadie, sin excepción.'
+        },
+        {
+          expresion: 'Tener [arrestos]',
+          pregunta: '¿Qué son los «arrestos»?',
+          opciones: ['Arrojo y valor', 'Detenciones', 'Restos de comida'],
+          reliquia: '«Arresto» es arrojo, determinación para emprender algo arriesgado. Tener arrestos es tener valor.'
+        }
+      ] },
+
+      // Día 43
+      { reliquias: [
+        {
+          expresion: 'Poner [coto]',
+          pregunta: '¿Qué es un «coto»?',
+          opciones: ['Un terreno acotado, con límites', 'Una codorniz', 'Un codo'],
+          reliquia: 'El coto es un terreno con límites marcados, como el de caza. Poner coto a algo es ponerle límite.'
+        },
+        {
+          expresion: 'A [matacaballo]',
+          pregunta: '¿De qué está hecho «matacaballo»?',
+          opciones: ['De «matar» y «caballo»', 'De «mata» y «cabello»', 'De un apellido'],
+          reliquia: 'Es correr tanto que se revienta el caballo. A matacaballo es muy deprisa.'
+        },
+        {
+          expresion: 'Hacerse [añicos]',
+          pregunta: '¿Qué son los «añicos»?',
+          opciones: ['Pedazos muy pequeños', 'Años de vida', 'Corderos'],
+          reliquia: 'Los añicos son trozos menudos de algo que se rompe. Hacerse añicos es romperse en mil pedazos.'
+        }
+      ] },
+
+      // Día 44
+      { reliquias: [
+        {
+          expresion: 'Dar [calabazas]',
+          pregunta: '¿Por qué «calabazas»?',
+          opciones: ['Porque se creía que la calabaza quitaba el deseo', 'Porque era el regalo de los novios', 'Porque los estudiantes las cultivaban'],
+          reliquia: 'Antiguamente se tenía la calabaza por remedio contra el apetito amoroso. Dar calabazas es rechazar a un pretendiente o suspender a un alumno.'
+        },
+        {
+          expresion: 'De [rechupete]',
+          pregunta: '¿De qué viene «rechupete»?',
+          opciones: ['De «chupar»', 'De «chupete»', 'De «repetir»'],
+          reliquia: 'Se forma sobre «chupar»: algo tan bueno que da para chuparse los dedos. De rechupete es buenísimo.'
+        },
+        {
+          expresion: 'Irse por los cerros de [Úbeda]',
+          pregunta: '¿Qué es «Úbeda»?',
+          opciones: ['Una ciudad de Jaén', 'Un río de Castilla', 'Un monte de Granada'],
+          reliquia: 'Según la leyenda, un caballero tardó en llegar a la conquista de Úbeda y se excusó con que se había perdido por sus cerros. Es divagar.'
+        }
+      ] },
+
+      // Día 45
+      { reliquias: [
+        {
+          expresion: 'Sin [cortapisas]',
+          pregunta: '¿Qué era una «cortapisa»?',
+          opciones: ['Una guarnición en el borde de una prenda', 'Un cuchillo de cocina', 'Una pisada corta'],
+          reliquia: 'La cortapisa era la tela de otro color en el borde de una falda o capa. Hoy es una limitación: sin cortapisas es sin trabas.'
+        },
+        {
+          expresion: 'Rasgarse las [vestiduras]',
+          pregunta: '¿Qué son las «vestiduras»?',
+          opciones: ['Las ropas', 'Las vendas', 'Las cortinas'],
+          reliquia: 'Rasgarse la ropa era un gesto antiguo de dolor o escándalo. Hoy es escandalizarse, a menudo con exageración.'
+        },
+        {
+          expresion: 'Por [carambola]',
+          pregunta: '¿De dónde viene «carambola»?',
+          opciones: ['Del billar', 'De una fruta tropical', 'De un juego de dados'],
+          reliquia: 'En el billar, la carambola es la jugada en que una bola toca a las otras dos. Por carambola es por casualidad, de rebote.'
+        }
+      ] },
+
+      // Día 46
+      { reliquias: [
+        {
+          expresion: 'Esto es [Jauja]',
+          pregunta: '¿Qué es «Jauja»?',
+          opciones: ['Una ciudad de los Andes peruanos', 'Un país de cuento sin existencia real', 'Un banquete de bodas'],
+          reliquia: 'Jauja es una ciudad de Perú, famosa por su riqueza en tiempos de la conquista. Acabó siendo el país imaginario de la abundancia.'
+        },
+        {
+          expresion: 'Armarse la [marimorena]',
+          pregunta: '¿De dónde viene «marimorena»?',
+          opciones: ['De una tabernera llamada Mari Morena, según la tradición', 'De una tormenta de verano', 'De una batalla naval'],
+          reliquia: 'Según la tradición, de una tabernera madrileña, Mari Morena, en cuya taberna hubo una pelea sonada. Es una riña con mucho alboroto.'
+        },
+        {
+          expresion: 'De pura [cepa]',
+          pregunta: '¿Qué es la «cepa»?',
+          opciones: ['El tronco de la vid', 'Una semilla', 'Un pozo'],
+          reliquia: 'La cepa es el tronco de la vid, de donde salen los sarmientos. De pura cepa es auténtico, de raíz.'
+        }
+      ] },
+
+      // Día 47
+      { reliquias: [
+        {
+          expresion: 'Mantenerse en sus [trece]',
+          pregunta: '¿De dónde sale el «trece»?',
+          opciones: ['Del papa Luna, Benedicto XIII', 'De las trece colonias', 'De un juego de naipes'],
+          reliquia: 'Se suele atribuir al papa Luna, Benedicto XIII, que se negó hasta su muerte a renunciar. Es mantenerse firme en una opinión.'
+        },
+        {
+          expresion: 'Hacer de su capa un [sayo]',
+          pregunta: '¿Qué es un «sayo»?',
+          opciones: ['Una prenda larga y holgada', 'Un saco de grano', 'Una espada'],
+          reliquia: 'El sayo era una casaca holgada y sin botones. Hacer de su capa un sayo es hacer uno lo que quiere con lo suyo.'
+        },
+        {
+          expresion: 'A la [chita] callando',
+          pregunta: '¿Qué es la «chita»?',
+          opciones: ['Un huesecillo del pie de las reses', 'Una gata pequeña', 'Una cotorra'],
+          reliquia: 'La chita es el astrágalo, un hueso del pie de las reses con el que se jugaba. A la chita callando es con disimulo, sin hacer ruido.'
+        }
+      ] },
+
+      // Día 48
+      { reliquias: [
+        {
+          expresion: 'Un ojo a la [virulé]',
+          pregunta: '¿Qué significa «virulé»?',
+          opciones: ['Torcido o estropeado', 'Morado', 'Cerrado'],
+          reliquia: 'A la virulé es en mal estado o torcido. Un ojo a la virulé es el que queda amoratado tras un golpe.'
+        },
+        {
+          expresion: 'Ni [chicha] ni limonada',
+          pregunta: '¿Qué es la «chicha»?',
+          opciones: ['Una bebida de maíz fermentado', 'La carne de cerdo', 'Una muchacha'],
+          reliquia: 'En América, la chicha es una bebida alcohólica de maíz. Ni chicha ni limonada es ni una cosa ni otra.'
+        },
+        {
+          expresion: 'Tener más paciencia que el santo [Job]',
+          pregunta: '¿Quién era «Job»?',
+          opciones: ['Un personaje de la Biblia', 'Un fraile ermitaño', 'Un pastor de ovejas'],
+          reliquia: 'En el libro de Job, Dios lo pone a prueba con todo tipo de desgracias y él lo soporta todo sin rebelarse.'
+        }
+      ] },
+
+      // Día 49
+      { reliquias: [
+        {
+          expresion: 'Más chulo que un [ocho]',
+          pregunta: '¿Qué era el «ocho»?',
+          opciones: ['Un tranvía de Madrid, según la explicación más extendida', 'Un naipe de la baraja', 'Un tipo de sombrero'],
+          reliquia: 'Se suele explicar por el tranvía número 8 de Madrid, que llevaba a la romería de San Isidro, lleno de chulapos. Es ser muy presumido o descarado.'
+        },
+        {
+          expresion: 'Ir de [bracete]',
+          pregunta: '¿Qué es un «bracete»?',
+          opciones: ['Un brazo, en diminutivo', 'Un brazalete', 'Una barandilla'],
+          reliquia: 'Es el diminutivo de «brazo». Ir de bracete es ir cogido del brazo de otra persona.'
+        },
+        {
+          expresion: 'Llevarse la [palma]',
+          pregunta: '¿Qué es aquí la «palma»?',
+          opciones: ['La hoja de palmera que se daba al vencedor', 'La de la mano', 'Un aplauso'],
+          reliquia: 'La hoja de palmera era símbolo de victoria. Llevarse la palma es sobresalir.'
+        }
+      ] },
+
+      // Día 50
+      { reliquias: [
+        {
+          expresion: 'Tener más cuento que [Calleja]',
+          pregunta: '¿Quién era «Calleja»?',
+          opciones: ['Un editor de cuentos infantiles', 'Un actor de teatro', 'Un mentiroso famoso'],
+          reliquia: 'Saturnino Calleja editó miles de cuentos para niños desde finales del siglo XIX. Tener más cuento que Calleja es exagerar o inventarse excusas.'
+        },
+        {
+          expresion: 'Llevar la [batuta]',
+          pregunta: '¿Qué es la «batuta»?',
+          opciones: ['La varilla del director de orquesta', 'Una bata', 'Un bastón de mando militar'],
+          reliquia: 'Con la batuta el director marca el compás a la orquesta. Llevar la batuta es mandar.'
+        },
+        {
+          expresion: 'Hasta los [topes]',
+          pregunta: '¿Qué son los «topes»?',
+          opciones: ['Los extremos superiores de los palos del barco', 'Los parachoques', 'Unos topos'],
+          reliquia: 'El tope es el punto más alto de los palos de un barco. Cargado hasta los topes es lleno del todo.'
+        }
+      ] },
+
+      // Día 51
+      { reliquias: [
+        {
+          expresion: 'Darse [ínfulas]',
+          pregunta: '¿Qué eran las «ínfulas»?',
+          opciones: ['Las cintas que cuelgan de la mitra del obispo', 'Unos bollos inflados', 'Unos humos de pipa'],
+          reliquia: 'Las ínfulas son las dos cintas que cuelgan de la mitra, símbolo de dignidad. Darse ínfulas es presumir de importancia.'
+        },
+        {
+          expresion: 'De [tejas] abajo',
+          pregunta: '¿Qué son las «tejas»?',
+          opciones: ['Las del tejado', 'Unas monedas', 'Unas faldas'],
+          reliquia: 'De las tejas para abajo es lo que queda bajo el tejado: el mundo terrenal, no el cielo. Se dice para hablar de lo humano, sin contar con Dios.'
+        },
+        {
+          expresion: 'Volver a las [andadas]',
+          pregunta: '¿Qué son las «andadas»?',
+          opciones: ['Los caminos ya recorridos', 'Unas cuentas pendientes', 'Unas cometas'],
+          reliquia: 'Las andadas son las huellas o el camino ya andado. Volver a ellas es recaer en una mala costumbre.'
+        }
+      ] },
+
+      // Día 52
+      { reliquias: [
+        {
+          expresion: 'Meter [cizaña]',
+          pregunta: '¿Qué es la «cizaña»?',
+          opciones: ['Una mala hierba que crece entre el trigo', 'Un insecto', 'Una cuña de madera'],
+          reliquia: 'La cizaña es una planta dañina que crece entre los cereales. Meter cizaña es sembrar discordia.'
+        },
+        {
+          expresion: 'Estar en [ascuas]',
+          pregunta: '¿Qué son las «ascuas»?',
+          opciones: ['Brasas encendidas', 'Avispas', 'Agujas'],
+          reliquia: 'Las ascuas son trozos de materia encendida, sin llama. Estar en ascuas es estar inquieto, como quien está sobre brasas.'
+        },
+        {
+          expresion: 'Hacer su [agosto]',
+          pregunta: '¿Por qué «agosto»?',
+          opciones: ['Por la cosecha del verano', 'Por las vacaciones de los ricos', 'Por un emperador romano'],
+          reliquia: 'Agosto era el mes de recoger la cosecha, y con ella el dinero del año. Hacer su agosto es sacar mucho provecho.'
+        }
+      ] },
+
+      // Día 53
+      { reliquias: [
+        {
+          expresion: 'En [ayunas]',
+          pregunta: '¿Qué son las «ayunas»?',
+          opciones: ['El estado de no haber comido', 'Unos rezos', 'Unas yuntas de bueyes'],
+          reliquia: 'Viene de «ayuno». Estar en ayunas es no haber comido nada desde la noche, y también no enterarse de algo.'
+        },
+        {
+          expresion: 'Pagar a [tocateja]',
+          pregunta: '¿De dónde viene «tocateja»?',
+          opciones: ['De «toca teja», por una moneda que se ponía en la mesa', 'De un tejado mal pagado', 'De un juego de niños'],
+          reliquia: 'Se suele explicar por «toca teja»: la teja sería una moneda que se dejaba sobre la mesa. Pagar a tocateja es pagar al contado.'
+        },
+        {
+          expresion: 'Estar en [capilla]',
+          pregunta: '¿Qué era la «capilla»?',
+          opciones: ['La celda donde el condenado pasaba sus últimas horas', 'La capucha de los frailes', 'Un coro de iglesia'],
+          reliquia: 'El reo a muerte pasaba sus últimas horas en una capilla de la cárcel. Estar en capilla es estar a punto de pasar un trance.'
+        }
+      ] },
+
+      // Día 54
+      { reliquias: [
+        {
+          expresion: 'En [pos] de',
+          pregunta: '¿Qué significa «pos»?',
+          opciones: ['Detrás, del latín post', 'Paz', 'Pulso'],
+          reliquia: 'Viene del latín post, \'después, detrás\'. Ir en pos de algo es ir tras ello.'
+        },
+        {
+          expresion: 'Andar en dimes y [diretes]',
+          pregunta: '¿Qué es un «direte»?',
+          opciones: ['Un «te diré»', 'Un dedal', 'Un tipo de dardo'],
+          reliquia: 'Es «diré te», \'te diré\'. Los dimes y diretes son las habladurías y discusiones.'
+        },
+        {
+          expresion: 'Tomar el [portante]',
+          pregunta: '¿Qué es el «portante»?',
+          opciones: ['Un paso rápido de las caballerías', 'Un portero', 'Un baúl'],
+          reliquia: 'El portante es un paso de las caballerías en que mueven a la vez la mano y el pie del mismo lado. Tomar el portante es irse.'
+        }
+      ] },
+
+      // Día 55
+      { reliquias: [
+        {
+          expresion: 'Sin [tapujos]',
+          pregunta: '¿Qué es un «tapujo»?',
+          opciones: ['Un embozo para taparse la cara', 'Una tapadera de olla', 'Un chal'],
+          reliquia: 'El tapujo era el embozo con que alguien se tapaba para no ser reconocido. Sin tapujos es con franqueza.'
+        },
+        {
+          expresion: 'Al [alimón]',
+          pregunta: '¿De dónde viene «alimón»?',
+          opciones: ['De un juego infantil, «al limón»', 'Del árabe, \'los dos\'', 'De una danza aragonesa'],
+          reliquia: 'Se cree que viene de «al limón», un juego de niños que se cogían de las manos. Hacer algo al alimón es hacerlo entre dos, a la vez.'
+        },
+        {
+          expresion: 'Salir de Guatemala y meterse en [Guatepeor]',
+          pregunta: '¿Qué es «Guatepeor»?',
+          opciones: ['Un juego de palabras con Guatemala', 'Una ciudad vecina', 'Un volcán'],
+          reliquia: 'Es un chiste con «Guate-mala»: si aquello era malo, lo otro es peor. Es salir de un apuro para caer en otro mayor.'
+        }
+      ] },
+
+      // Día 56
+      { reliquias: [
+        {
+          expresion: 'Dormir la [mona]',
+          pregunta: '¿Qué es aquí la «mona»?',
+          opciones: ['La borrachera', 'Un mono pequeño', 'Una muñeca'],
+          reliquia: '«Mona» es la borrachera. Dormir la mona es dormir para que se pase.'
+        },
+        {
+          expresion: 'En el [ínterin]',
+          pregunta: '¿Qué significa «ínterin»?',
+          opciones: ['Entretanto, en latín', 'Por dentro', 'Un pasillo'],
+          reliquia: 'Es el adverbio latino interim, \'entretanto\'. En el ínterin es mientras tanto.'
+        },
+        {
+          expresion: 'Dar [coba]',
+          pregunta: '¿Qué es la «coba»?',
+          opciones: ['Un halago fingido', 'Un trago de vino', 'Un juego de cartas'],
+          reliquia: 'La coba es la adulación para ganarse a alguien. Dar coba es hacer la pelota.'
+        }
+      ] },
+
+      // Día 57
+      { reliquias: [
+        {
+          expresion: 'Por [mor] de',
+          pregunta: '¿Qué es «mor»?',
+          opciones: ['Una forma acortada de «amor»', 'Una medida antigua', 'El nombre de un río'],
+          reliquia: '«Mor» es «amor» sin su primera letra. Por mor de es por causa de, por culpa de.'
+        },
+        {
+          expresion: 'No ser moco de [pavo]',
+          pregunta: '¿Qué es el «moco de pavo»?',
+          opciones: ['El apéndice carnoso del pico del pavo', 'Un dulce', 'Un resfriado'],
+          reliquia: 'Es el apéndice rojo que cuelga sobre el pico del pavo, que no sirve para nada. No ser moco de pavo es ser algo importante.'
+        },
+        {
+          expresion: 'Más tonto que [Abundio]',
+          pregunta: '¿Quién es «Abundio»?',
+          opciones: ['Un personaje de chistes populares', 'Un santo de Córdoba', 'Un rey godo'],
+          reliquia: 'Abundio es el tonto de muchos chistes, como el que vendió el coche para comprar gasolina.'
+        }
+      ] },
+
+      // Día 58
+      { reliquias: [
+        {
+          expresion: 'En [ciernes]',
+          pregunta: '¿Qué es el «cierne»?',
+          opciones: ['La floración de la vid o el trigo', 'Una criba de harina', 'Un capullo de seda'],
+          reliquia: 'El cierne es la floración y fecundación de la vid, el olivo o el trigo. Estar en ciernes es estar en sus comienzos.'
+        },
+        {
+          expresion: 'A [bote] pronto',
+          pregunta: '¿Qué es el «bote»?',
+          opciones: ['El salto de una pelota', 'Una barca', 'Un tarro'],
+          reliquia: 'Se toma del juego de pelota: golpearla nada más botar. A bote pronto es sin pensarlo, sobre la marcha.'
+        },
+        {
+          expresion: 'Ir de [tiros] largos',
+          pregunta: '¿Qué eran los «tiros»?',
+          opciones: ['Las correas que tiran del carruaje', 'Unos disparos de salva', 'Unas cintas de un traje'],
+          reliquia: 'Los tiros son las correas con que las caballerías tiran del coche; los de gala eran largos. Ir de tiros largos es ir muy elegante.'
+        }
+      ] },
+
+      // Día 59
+      { reliquias: [
+        {
+          expresion: 'De [buten]',
+          pregunta: '¿De dónde viene «buten»?',
+          opciones: ['Del caló, la lengua de los gitanos', 'Del alemán gut, \'bueno\'', 'Del latín bonum'],
+          reliquia: 'Viene del caló. De buten es excelente, de primera.'
+        },
+        {
+          expresion: 'Tener [agallas]',
+          pregunta: '¿Qué son las «agallas»?',
+          opciones: ['Las branquias de los peces', 'Unas almendras', 'Unas espuelas'],
+          reliquia: 'Las agallas son las branquias de los peces. Tener agallas es tener valor.'
+        },
+        {
+          expresion: 'No andarse con [chiquitas]',
+          pregunta: '¿Qué son las «chiquitas»?',
+          opciones: ['Rodeos, evasivas', 'Niñas pequeñas', 'Copas de vino'],
+          reliquia: 'Las chiquitas son excusas o rodeos para no afrontar algo. No andarse con chiquitas es ir directo al grano.'
+        }
+      ] },
+
+      // Día 60
+      { reliquias: [
+        {
+          expresion: 'Dormir al [raso]',
+          pregunta: '¿Qué es el «raso»?',
+          opciones: ['El campo sin techo', 'Una tela brillante', 'Un rasguño'],
+          reliquia: 'El raso es el espacio sin techo ni resguardo. Dormir al raso es dormir a la intemperie.'
+        },
+        {
+          expresion: 'Echar los [tejos]',
+          pregunta: '¿Qué es un «tejo»?',
+          opciones: ['La pieza que se lanza en algunos juegos', 'Una teja pequeña', 'Un regalo de boda'],
+          reliquia: 'El tejo es la pieza plana que se tira en juegos como la rayuela. Echar los tejos es insinuarse a alguien.'
+        },
+        {
+          expresion: 'Acabar como el rosario de la [aurora]',
+          pregunta: '¿Qué era la «aurora» aquí?',
+          opciones: ['El amanecer, cuando se rezaba el rosario por las calles', 'Una cofradía de mujeres', 'Un barco hundido'],
+          reliquia: 'Los rosarios de la aurora eran procesiones al alba que a veces acababan a farolazos con los juerguistas. Acabar así es acabar mal y a golpes.'
+        }
+      ] },
+
+      // Día 61
+      { reliquias: [
+        {
+          expresion: 'Cortar al [bies]',
+          pregunta: '¿Qué es el «bies»?',
+          opciones: ['El sesgo, en diagonal', 'Un tipo de tela', 'Una tijera'],
+          reliquia: 'Viene del francés biais, \'oblicuo\'. Cortar al bies es cortar la tela en diagonal.'
+        },
+        {
+          expresion: 'En [cueros]',
+          pregunta: '¿Qué son los «cueros»?',
+          opciones: ['La piel', 'Unos odres de vino', 'Unas sandalias'],
+          reliquia: '«Cuero» es la piel, también la humana. Estar en cueros es estar desnudo, sin más vestido que la piel.'
+        },
+        {
+          expresion: 'A [machamartillo]',
+          pregunta: '¿De qué está hecho «machamartillo»?',
+          opciones: ['De «machar», machacar, y «martillo»', 'De «macho» y «martillo»', 'De un apellido vasco'],
+          reliquia: 'Es como clavar a martillazos. A machamartillo es con firmeza y sin ceder.'
+        }
+      ] },
+
+      // Día 62
+      { reliquias: [
+        {
+          expresion: '[Erre] que erre',
+          pregunta: '¿Qué es la «erre»?',
+          opciones: ['La letra r', 'Un error', 'Una mula terca'],
+          reliquia: 'Es la letra r, repetida una y otra vez. Erre que erre es con obstinación.'
+        },
+        {
+          expresion: 'Entrar de [rondón]',
+          pregunta: '¿Qué es el «rondón»?',
+          opciones: ['Una entrada de golpe, sin llamar', 'Una ronda de vigilancia', 'Un baile en corro'],
+          reliquia: 'Viene de «ronda». Entrar de rondón es colarse de repente, sin llamar ni pedir permiso.'
+        },
+        {
+          expresion: 'Estar en el [candelero]',
+          pregunta: '¿Qué es un «candelero»?',
+          opciones: ['Un utensilio para sostener una vela', 'Un escenario de teatro', 'Un faro'],
+          reliquia: 'El candelero sostiene la vela en alto, donde todos la ven. Estar en el candelero es estar en el centro de la atención.'
+        }
+      ] },
+
+      // Día 63
+      { reliquias: [
+        {
+          expresion: 'Montar en [cólera]',
+          pregunta: '¿Qué es la «cólera»?',
+          opciones: ['La bilis, uno de los humores del cuerpo', 'Una enfermedad', 'Un caballo'],
+          reliquia: 'Para la medicina antigua, la cólera o bilis era el humor de la ira. Montar en cólera es enfurecerse.'
+        },
+        {
+          expresion: 'Tener mucha [labia]',
+          pregunta: '¿De dónde viene «labia»?',
+          opciones: ['De «labio»', 'De «laborar»', 'De «lavar»'],
+          reliquia: 'Viene de «labio». Tener labia es tener gracia y facilidad para convencer hablando.'
+        },
+        {
+          expresion: 'Ponerse hecho un [basilisco]',
+          pregunta: '¿Qué es un «basilisco»?',
+          opciones: ['Un animal fabuloso que mataba con la mirada', 'Un emperador de Bizancio', 'Un perro de presa'],
+          reliquia: 'Era un reptil legendario que mataba con solo mirar. Ponerse hecho un basilisco es enfurecerse muchísimo.'
+        }
+      ] },
+
+      // Día 64
+      { reliquias: [
+        {
+          expresion: 'Andar de picos [pardos]',
+          pregunta: '¿Qué eran los «picos pardos»?',
+          opciones: ['Unas faldas de color pardo', 'Unos pájaros', 'Unas montañas'],
+          reliquia: 'Se relaciona con los picos pardos, la falda que llevaban por obligación las mujeres de la mala vida. Andar de picos pardos es irse de juerga.'
+        },
+        {
+          expresion: 'Hacer [mella]',
+          pregunta: '¿Qué es una «mella»?',
+          opciones: ['La rotura en el filo o el borde de algo', 'Una herida en la frente', 'Una moneda gastada'],
+          reliquia: 'La mella es el desperfecto en el filo de un arma o en el borde de un objeto. Hacer mella es causar efecto o impresión.'
+        },
+        {
+          expresion: 'Pasar la noche en [vela]',
+          pregunta: '¿Qué es la «vela»?',
+          opciones: ['La vigilia, el estar despierto', 'Un cirio', 'La de un barco'],
+          reliquia: '«Vela» es la acción de velar, de estar despierto. Pasar la noche en vela es no pegar ojo.'
+        }
+      ] },
+
+      // Día 65
+      { reliquias: [
+        {
+          expresion: 'Estar en [mantillas]',
+          pregunta: '¿Qué son las «mantillas»?',
+          opciones: ['Las telas en que se envolvía a los bebés', 'Unos velos de encaje', 'Unas mantas de mula'],
+          reliquia: 'Las mantillas eran las telas con que se fajaba a los recién nacidos. Estar en mantillas es estar en los inicios.'
+        },
+        {
+          expresion: 'Estar al [quite]',
+          pregunta: '¿Qué es el «quite»?',
+          opciones: ['El lance para apartar al toro de alguien', 'Una despedida', 'Un descuento'],
+          reliquia: 'En el toreo, el quite es el lance con que se aparta al toro de quien está en peligro. Estar al quite es estar listo para ayudar.'
+        },
+        {
+          expresion: 'Hacer [pinitos]',
+          pregunta: '¿De dónde vienen los «pinitos»?',
+          opciones: ['De «pino», que significaba \'erguido, en pie\'', 'De los árboles de Navidad', 'De un juego de bolos'],
+          reliquia: '«Pino» significaba \'derecho, en pie\'. Los pinitos son los primeros pasos de un niño y, por extensión, los primeros intentos en algo.'
+        }
+      ] },
+
+      // Día 66
+      { reliquias: [
+        {
+          expresion: 'Saber al [dedillo]',
+          pregunta: '¿Qué es el «dedillo»?',
+          opciones: ['Un dedo, en diminutivo', 'Un dedal', 'Un dado'],
+          reliquia: 'Es el diminutivo de «dedo», como quien repasa algo contando con los dedos. Saber algo al dedillo es saberlo perfectamente.'
+        },
+        {
+          expresion: 'No hay [tu tía]',
+          pregunta: '¿Qué es «tu tía»?',
+          opciones: ['La atutía, un ungüento', 'Un pariente', 'Una tienda'],
+          reliquia: 'Viene de «atutía», un ungüento que se tenía por remedio para todo; cuando no funcionaba, no había atutía. Es que no hay remedio.'
+        },
+        {
+          expresion: 'Ser harina de otro [costal]',
+          pregunta: '¿Qué es un «costal»?',
+          opciones: ['Un saco grande de tela', 'Un costado', 'Una costilla'],
+          reliquia: 'El costal es el saco en que se guarda el grano o la harina. Ser harina de otro costal es ser un asunto distinto.'
+        }
+      ] },
+
+      // Día 67
+      { reliquias: [
+        {
+          expresion: 'Al baño [María]',
+          pregunta: '¿Quién era «María»?',
+          opciones: ['Una alquimista de la Antigüedad', 'La Virgen María', 'Una cocinera francesa'],
+          reliquia: 'Se atribuye a María la Judía, alquimista de Alejandría. Al baño María es calentar algo dentro de otro recipiente con agua.'
+        },
+        {
+          expresion: 'A la antigua [usanza]',
+          pregunta: '¿Qué es la «usanza»?',
+          opciones: ['El uso o la costumbre', 'Una prenda de vestir', 'La usura'],
+          reliquia: '«Usanza» es el uso o la costumbre. A la antigua usanza es como se hacía antes.'
+        },
+        {
+          expresion: 'Tumbarse a la [bartola]',
+          pregunta: '¿De dónde viene la «bartola»?',
+          opciones: ['De Bartolo, nombre del hombre despreocupado', 'De una hamaca de tela', 'De una siesta larga'],
+          reliquia: 'Se forma sobre Bartolo, nombre que se daba al hombre despreocupado. Tumbarse a la bartola es descansar sin ningún cuidado.'
+        }
+      ] },
+
+      // Día 68
+      { reliquias: [
+        {
+          expresion: 'Matar el [gusanillo]',
+          pregunta: '¿Qué es el «gusanillo»?',
+          opciones: ['El hambre o el ansia, como un gusano dentro', 'Una lombriz de pesca', 'Un fideo'],
+          reliquia: 'Se decía que una copa de aguardiente en ayunas mataba los gusanos del estómago. Matar el gusanillo es comer algo para calmar el hambre.'
+        },
+        {
+          expresion: 'Cantar las [cuarenta]',
+          pregunta: '¿Qué son las «cuarenta»?',
+          opciones: ['Un tanto del juego del tute', 'Las cuarenta horas de rezo', 'La cuaresma'],
+          reliquia: 'En el tute, quien reúne rey y caballo del palo de triunfo «canta las cuarenta». Cantárselas a alguien es decirle sus verdades.'
+        },
+        {
+          expresion: 'En un quítame allá esas [pajas]',
+          pregunta: '¿Qué son aquí las «pajas»?',
+          opciones: ['Algo sin importancia', 'Unas camas de paja', 'Unas pajitas para beber'],
+          reliquia: 'Las pajas son lo que no vale nada. En un quítame allá esas pajas es en un instante, sin ninguna dificultad.'
+        }
+      ] },
+
+      // Día 69
+      { reliquias: [
+        {
+          expresion: 'Quedarse en agua de [borrajas]',
+          pregunta: '¿Qué es la «borraja»?',
+          opciones: ['Una planta de huerta', 'Un borrador', 'Una borrachera'],
+          reliquia: 'La borraja es una planta de huerta, y su agua, una infusión de poco efecto. Quedarse en agua de borrajas es quedarse en nada.'
+        },
+        {
+          expresion: 'Ir de [Herodes] a Pilatos',
+          pregunta: '¿Quién era «Herodes»?',
+          opciones: ['El rey de Judea ante quien llevaron a Jesús', 'Un emperador romano', 'Un santo'],
+          reliquia: 'En la Pasión, Jesús fue enviado de Pilatos a Herodes y de vuelta. Ir de Herodes a Pilatos es ir de un sitio a otro sin resolver nada.'
+        },
+        {
+          expresion: 'Dorar la [píldora]',
+          pregunta: '¿Qué es la «píldora»?',
+          opciones: ['Una pastilla de medicina', 'Una moneda', 'Una bola de billar'],
+          reliquia: 'Los boticarios recubrían algunas píldoras amargas para que fueran más fáciles de tragar. Dorar la píldora es suavizar una mala noticia.'
+        }
       ] }
     ]
   };
