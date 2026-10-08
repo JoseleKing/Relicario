@@ -192,8 +192,10 @@
     return partida.respuestas.map(function (r) { return r === 0 ? '◆' : '◇'; }).join('');
   }
 
-  function textoCompartir(fecha, partida, url) {
-    return 'Relicario · ' + fechaCorta(fecha) + ' · ' + filaRombos(partida) + (url ? ' · ' + url : '');
+  // Una marca por reliquia: ▰ acertada, ▱ fallada. «Relicario nº 7 ▰▱▰ 2/3 aciertos» y el enlace.
+  function textoCompartir(dia, partida) {
+    var marcas = partida.respuestas.map(function (r) { return r === 0 ? '▰' : '▱'; }).join('');
+    return 'Relicario nº ' + dia + ' ' + marcas + ' ' + aciertos(partida) + '/' + partida.respuestas.length + ' aciertos\njoseleking.github.io/Relicario';
   }
 
   // ---------------------------------------------------------------------------
@@ -537,7 +539,7 @@
     );
 
     document.getElementById('btn-compartir').addEventListener('click', function () {
-      compartir(textoCompartir(fechaHoy(), partida, urlJuego()));
+      compartir(textoCompartir(hoy, partida));
     });
     empezarCuentaAtras();
   }
@@ -615,10 +617,6 @@
   });
 
   // ---------- Compartir ----------
-
-  function urlJuego() {
-    return location.protocol.indexOf('http') === 0 ? location.origin + location.pathname : '';
-  }
 
   function compartir(texto) {
     if (navigator.share) {
