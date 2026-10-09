@@ -3,7 +3,7 @@
    (ver README). Red primero para el juego (así las reliquias nuevas llegan en cuanto
    se publican) y copia guardada si no hay conexión. */
 
-const CACHE_VERSION = 'v12';
+const CACHE_VERSION = 'v13';
 const CACHE = `relicario-${CACHE_VERSION}`;
 
 const ARCHIVOS = [

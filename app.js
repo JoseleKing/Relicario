@@ -693,9 +693,13 @@
   }
 
   // La portada con el logo se ve al menos PORTADA_MS desde que se abre la página y luego se desvanece.
-  var PORTADA_MS = 1500, FUNDIDO_MS = 500;
+  // Si tarda en pintarse (la primera visita), se queda al menos PINTADA_MS desde entonces.
+  var PORTADA_MS = 1500, PINTADA_MS = 1400, FUNDIDO_MS = 500;
 
-  function msPortada() { return Math.max(0, PORTADA_MS - performance.now()); }
+  function msPortada() {
+    var pintada = (performance.getEntriesByName('first-contentful-paint')[0] || { startTime: performance.now() }).startTime;
+    return Math.max(0, PORTADA_MS - performance.now(), PINTADA_MS - (performance.now() - pintada));
+  }
 
   function despuesDePortada(fn) { setTimeout(fn, msPortada() + FUNDIDO_MS); }
 
