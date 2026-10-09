@@ -693,7 +693,7 @@
   }
 
   // La portada con el logo se ve al menos PORTADA_MS desde que se abre la página y luego se desvanece.
-  var PORTADA_MS = 900, FUNDIDO_MS = 400;
+  var PORTADA_MS = 1500, FUNDIDO_MS = 500;
 
   function msPortada() { return Math.max(0, PORTADA_MS - performance.now()); }
 
